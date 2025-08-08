@@ -95,7 +95,12 @@
   }
 
   .service-card {
-    @apply bg-card border border-border rounded-xl p-6 transition-all duration-300 hover:shadow-xl hover:border-accent/50 hover:scale-105;
+    @apply bg-card border border-border rounded-xl p-6 transition-all duration-300 hover:border-accent/50 hover:scale-105;
+    box-shadow: 0 15px 40px -15px hsl(221, 47%, 6% / 0.5);
+  }
+
+  .service-card:hover {
+    box-shadow: 0 20px 50px -10px hsl(221, 47%, 6% / 0.6);
   }
 
   .icon-circle {
@@ -108,7 +113,12 @@
   }
 
   .pricing-card {
-    @apply bg-card border border-border rounded-xl p-8 transition-all duration-300 hover:shadow-xl hover:border-accent/50;
+    @apply bg-card border border-border rounded-xl p-8 transition-all duration-300 hover:border-accent/50;
+    box-shadow: 0 15px 40px -15px hsl(221, 47%, 6% / 0.5);
+  }
+
+  .pricing-card:hover {
+    box-shadow: 0 20px 50px -10px hsl(221, 47%, 6% / 0.6);
   }
 
   .pricing-popular {
