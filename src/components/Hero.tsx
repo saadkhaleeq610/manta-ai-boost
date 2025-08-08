@@ -21,11 +21,11 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Logo Circle */}
           <div className="flex justify-center mb-8">
-            <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full bg-primary border-4 border-primary flex items-center justify-center shadow-glow">
+            <div className="w-24 h-24 lg:w-32 lg:h-32 rounded-full bg-primary border-4 border-primary flex items-center justify-center" style={{ boxShadow: '0 8px 25px -8px hsl(199, 89%, 58% / 0.6)' }}>
               <img 
                 src="/lovable-uploads/a42b1506-349c-4671-bc58-b5acd43957bc.png" 
                 alt="Blue Manta Labs Logo" 
-                className="w-20 h-20 lg:w-24 lg:h-24 object-contain"
+                className="w-16 h-16 lg:w-20 lg:h-20 object-contain"
               />
             </div>
           </div>
