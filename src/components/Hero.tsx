@@ -19,7 +19,18 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center flex items-center justify-center min-h-screen">
         {/* Hero Content */}
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+          {/* Logo Circle */}
+          <div className="flex justify-center mb-8">
+            <div className="w-32 h-32 lg:w-40 lg:h-40 rounded-full bg-primary border-4 border-primary flex items-center justify-center shadow-glow">
+              <img 
+                src="/lovable-uploads/a42b1506-349c-4671-bc58-b5acd43957bc.png" 
+                alt="Blue Manta Labs Logo" 
+                className="w-20 h-20 lg:w-24 lg:h-24 object-contain"
+              />
+            </div>
+          </div>
+          
+          <h1 className="text-3xl lg:text-5xl font-bold mb-6 leading-tight">
             AI Solutions That Transform Your Business
           </h1>
           
