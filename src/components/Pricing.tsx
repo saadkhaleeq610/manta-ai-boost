@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
-import VapiLauncher from "./Vapi";
 
 const scrollToContact = () => {
     const contactSection = document.getElementById('contact');
@@ -120,7 +119,6 @@ const Pricing = () => {
 
   return (
     <section className="py-20 px-4">
-      <VapiLauncher/>
       <div className="container mx-auto">
         {/* Pricing Plans */}
         <div className="text-center mb-16">
