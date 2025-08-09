@@ -10,15 +10,32 @@
     <meta property="og:title" content="Blue Manta Labs - AI Solutions That Transform Your Business" />
     <meta property="og:description" content="Custom AI solutions, voice technology integration, and intelligent automation. We specialize in AI agents, voice AI, machine learning models, and process automation." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async type="text/javascript"></script>
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <vapi-widget 
+      mode="voice" 
+      theme="dark" 
+      base-color="#1D4ED8"         
+      accent-color="#1E3A8A"      
+      button-base-color="#1D4ED8"  
+      button-accent-color="#FFFFFF" 
+      radius="small" 
+      size="full" 
+      position="bottom-right" 
+      main-label="Talk to our AI Assistant" 
+      start-button-text="Start" 
+      end-button-text="End Call" 
+      require-consent="true" 
+      local-storage-key="vapi_widget_consent" 
+      show-transcript="true" 
+      public-key="c5db2659-caca-40ca-a706-4226a47f03a7" 
+      assistant-id="500e6361-5d59-4e34-8b24-110b723ec418"
+      metadata='{"source": "website_widget", "page": "consultation"}'
+      enable-function-calling="true">
+    </vapi-widget>
   </body>
 </html>

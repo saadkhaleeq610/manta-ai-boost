@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import VapiLauncher from "./Vapi";
+
+const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    contactSection?.scrollIntoView({ behavior: 'smooth' });
+  };
 
 const Pricing = () => {
   const plans = [
@@ -114,6 +120,7 @@ const Pricing = () => {
 
   return (
     <section className="py-20 px-4">
+      <VapiLauncher/>
       <div className="container mx-auto">
         {/* Pricing Plans */}
         <div className="text-center mb-16">
@@ -148,7 +155,7 @@ const Pricing = () => {
                   ))}
                 </ul>
                 
-                <Button className="w-full hero-button">
+                <Button onClick={scrollToContact} className="w-full hero-button">
                   Get Started
                 </Button>
               </div>

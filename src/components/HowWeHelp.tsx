@@ -1,7 +1,7 @@
-import captureLeadsImg from "@/assets/capture-leads.jpg";
-import followUpImg from "@/assets/follow-up.jpg";
-import trackMattersImg from "@/assets/track-matters.jpg";
-import closeSalesImg from "@/assets/close-sales.jpg";
+import captureLeadsImg from "../assets/lead.svg";
+import followUpImg from "../assets/follow.svg";
+import trackMattersImg from "../assets/track.svg";
+import closeSalesImg from "../assets/sales.svg";
 
 const HowWeHelp = () => {
   const helpItems = [
@@ -28,7 +28,7 @@ const HowWeHelp = () => {
   ];
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-40 px-4">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">Here's How We Help You Grow</h2>

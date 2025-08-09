@@ -46,7 +46,7 @@
     --radius: 0.75rem;
 
     /* Custom Blue Manta Design Tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(221, 47%, 6%) 0%, hsl(225, 42%, 9%) 50%, hsl(221, 47%, 8%) 100%);
+    --hero-gradient: linear-gradient(135deg, hsl(223, 41%, 3%) 0%, hsl(224, 41%, 5%) 50%, hsl(218, 48%, 5%) 100%);
     --sky-gradient: linear-gradient(135deg, hsl(194, 100%, 70%) 0%, hsl(199, 89%, 58%) 100%);
     --water-gradient: linear-gradient(135deg, hsl(194, 100%, 85%) 0%, hsl(199, 89%, 75%) 100%);
     
