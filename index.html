@@ -11,6 +11,15 @@
     <meta property="og:description" content="Custom AI solutions, voice technology integration, and intelligent automation. We specialize in AI agents, voice AI, machine learning models, and process automation." />
     <meta property="og:type" content="website" />
     <script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async type="text/javascript"></script>
+    <style>
+      .vapi-wrapper {
+        transform: scale(0.8);
+        transform-origin: bottom right;
+        position: fixed; /* so scale doesn't affect positioning */
+        bottom: 20px;
+        right: 20px;
+      }
+    </style>
   </head>
 
   <body>
@@ -37,5 +46,6 @@
       metadata='{"source": "website_widget", "page": "consultation"}'
       enable-function-calling="true">
     </vapi-widget>
+    </div>
   </body>
 </html>

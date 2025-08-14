@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
 
 const scrollToContact = () => {
     const contactSection = document.getElementById('contact');
@@ -162,38 +161,38 @@ const Pricing = () => {
         </div>
 
         {/* Comparison Table */}
-        <div className="mt-20">
+        <div className="mt-24">
           <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12">
             Compare Pricing Plans to Find the Best
           </h2>
           
           <div className="overflow-x-auto">
-            <table className="w-full border-collapse">
+            <table className="w-full border-collapse min-w-full">
               <thead>
                 <tr className="border-b border-border">
-                  <th className="text-left p-4 font-bold">Pricing Plans</th>
-                  <th className="text-center p-4 font-bold">Base</th>
-                  <th className="text-center p-4 font-bold">Premium</th>
-                  <th className="text-center p-4 font-bold">Elite</th>
+                  <th className="text-left p-2 sm:p-4 font-bold">Pricing Plans</th>
+                  <th className="text-center p-2 sm:p-4 font-bold min-w-16">Base</th>
+                  <th className="text-center p-2 sm:p-4 font-bold min-w-20">Premium</th>
+                  <th className="text-center p-2 sm:p-4 font-bold min-w-16">Elite</th>
                 </tr>
               </thead>
               <tbody>
                 {comparisonFeatures.map((feature, index) => (
                   <tr key={index} className="border-b border-border">
-                    <td className="p-4">
+                    <td className="p-2 sm:p-4">
                       <div>
-                        <h4 className="font-semibold mb-1">{feature.name}</h4>
-                        <p className="text-sm text-muted-foreground">{feature.description}</p>
+                        <h4 className="font-semibold mb-1 text-sm sm:text-base">{feature.name}</h4>
+                        <p className="text-xs sm:text-sm text-muted-foreground">{feature.description}</p>
                       </div>
                     </td>
-                    <td className="p-4 text-center">
-                      {feature.base && <Check className="feature-check w-5 h-5 mx-auto" />}
+                    <td className="p-2 sm:p-4 text-center">
+                      {feature.base && <span className="feature-check text-green-500 text-lg sm:text-xl">✓</span>}
                     </td>
-                    <td className="p-4 text-center">
-                      {feature.premium && <Check className="feature-check w-5 h-5 mx-auto" />}
+                    <td className="p-2 sm:p-4 text-center">
+                      {feature.premium && <span className="feature-check text-green-500 text-lg sm:text-xl">✓</span>}
                     </td>
-                    <td className="p-4 text-center">
-                      {feature.elite && <Check className="feature-check w-5 h-5 mx-auto" />}
+                    <td className="p-2 sm:p-4 text-center">
+                      {feature.elite && <span className="feature-check text-green-500 text-lg sm:text-xl">✓</span>}
                     </td>
                   </tr>
                 ))}

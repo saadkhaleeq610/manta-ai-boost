@@ -11,7 +11,7 @@ const WhyChooseUs = () => {
   };
 
   return (
-    <section className="py-40 px-4">
+    <section className="pt-28 pb-20 px-4">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           

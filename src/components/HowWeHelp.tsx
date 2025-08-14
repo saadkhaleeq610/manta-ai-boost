@@ -28,7 +28,7 @@ const HowWeHelp = () => {
   ];
 
   return (
-    <section className="py-40 px-4">
+    <section className="pt-10 pb-28 px-4">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">Here's How We Help You Grow</h2>
