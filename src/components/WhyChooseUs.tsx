@@ -25,9 +25,29 @@ const WhyChooseUs = () => {
               We're not just a tech company. We understand the jobsite hustle, the sales grind, and the real problems suppliers face every day.
             </p>
             
-            <Button onClick={scrollToContact} className="hero-button">
-              Book Your Consultation
-            </Button>
+            <Button
+            onClick={scrollToContact}
+            className="relative group bg-gradient-to-r from-sky-400 via-blue-500 to-slate-800 hover:from-sky-500 hover:via-blue-600 hover:to-slate-900 text-white text-base font-semibold px-8 py-4 rounded-lg shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-sky-400/50 overflow-hidden"
+          >
+            {/* Animated background glow */}
+            <div className="absolute inset-0 bg-gradient-to-r from-sky-400 via-blue-500 to-slate-800 opacity-0 group-hover:opacity-100 blur-sm transition-opacity duration-300"></div>
+            
+            {/* Shine effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></div>
+            
+            {/* Button content */}
+            <span className="relative z-10 flex items-center gap-2">
+              Schedule Your Consultation
+              <svg 
+                className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </span>
+          </Button>
           </div>
           
           {/* Right Content - Benefits Grid */}
